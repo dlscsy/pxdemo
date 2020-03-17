@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    # 使用 Naoos作为服务注册发现 A
+    nacos:
+      discovery:
+        server-addr: 192.168.66.120:8848
+      config:
+          enabled: false

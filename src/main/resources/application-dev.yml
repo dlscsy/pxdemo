@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    username: dpzj
+    password: dpzj
+    url: jdbc:mysql://localhost:3306/px-trade?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    driver-class-name: com.mysql.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  type-aliases-package: com.demo.entity
+
+#showSql
+logging:
+  level:
+    com:
+      demo:
+        mapper : debug

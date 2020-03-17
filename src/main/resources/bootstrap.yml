@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: pxdemo
+  profiles:
+    active: dev
+server:
+  port: 15002
+ribbon:
+  ConnectTimeout: 3000
+  ReadTimeout: 60000
